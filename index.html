@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>ONUBA SUSHI</title>
+</head>
+<body>
+  
+  <header class="header-bg">
+    <!-- Canvas del Logo -->
+    <canvas id="logoCanvas" width="300" height="150"></canvas>
+    <p id="descripcion" data-idioma="japones">本物の日本食をお楽しみください！</p><br>
+    <a href="#menu" class="enlace">Menú</a>
+    <a href="#promociones" class="enlace">Promociones</a>
+  </header>  
+
+  <!-- Menú Animado -->
+  <nav class="menu" id="menu">
+      <ul class="menu-list">
+          <li><a href="#sopas">Sopas y Ramen</a></li>
+          <li><a href="#sushi">Sushi</a></li>
+          <li><a href="#gyozas">Gyozas</a></li>
+          <li><a href="#combos">Combos</a></li>
+          <li><a href="#bebidas">Bebidas</a></li>
+          <li><a href="#postre">Postre</a></li>
+      </ul>
+  </nav>
+  
+  <section id="sopas">
+    <h2>Sopas y Ramen</h2>
+    <p>Deliciosas sopas y auténticos ramen para satisfacer tu paladar.</p><br>
+    <div>
+      <img src="images/ramen.jpg" alt="Ramen de pollo">
+      <h3>Ramen de pollo</h3>
+      <p>Rico y reconfortante, perfecto para cualquier ocasión.</p>
+      <p class="precio">8.99€</p>
+    </div>
+    <div>
+      <img src="images/miso.jpg" alt="Sopa de miso">
+      <h3>Sopa de miso</h3>
+      <p>Una sopa clásica japonesa, llena de sabor y tradición.</p>
+      <p class="precio">7.99€</p>
+    </div>
+    <div>
+      <img src="images/ramen-cerdo.jpg" alt="Ramen de cerdo">
+      <h3>Ramen de cerdo</h3>
+      <p>Una versión más sabrosa y jugosa de este plato popular.</p>
+      <p class="precio">9.49€</p>
+    </div>
+    <div>
+      <img src="images/soba.jpg" alt="Sopa de fideos soba">
+      <h3>Sopa de fideos soba</h3>
+      <p>Una opción más ligera pero igualmente deliciosa.</p>
+      <p class="precio">6.99€</p>
+    </div>
+  </section>
+  
+  <section id="sushi">
+    <h2>Sushi</h2>
+    <p>Variedad de sushi fresco, preparado con los mejores ingredientes.</p><br>
+    <div>
+      <img src="images/sushi1.jpg" alt="Nigiri de salmón">
+      <h3>Nigiri de salmón</h3>
+      <p>Delicioso nigiri con fresco salmón sobre una base de arroz.</p>
+      <p class="precio">5.49€</p>
+    </div>
+    <div>
+      <img src="images/sushi2.jpg" alt="Maki de aguacate">
+      <h3>Maki de aguacate</h3>
+      <p>Rollito de sushi con aguacate fresco y arroz por dentro.</p>
+      <p class="precio">5.99€</p>
+    </div>
+    <div>
+      <img src="images/sushi3.jpg" alt="Sashimi de atún">
+      <h3>Sashimi de atún</h3>
+      <p>Finas láminas de atún fresco, perfectamente cortadas y presentadas.</p>
+      <p class="precio">7.49€</p>
+    </div>
+    <div>
+      <img src="images/sushi4.jpg" alt="Temaki de langostino">
+      <h3>Temaki de langostino</h3>
+      <p>Cono de alga relleno de langostinos frescos y arroz.</p>
+      <p class="precio">4.99€</p>
+    </div>
+    <div>
+      <img src="images/sushi5.jpg" alt="Gunkan de tobiko">
+      <h3>Gunkan de tobiko</h3>
+      <p>Pequeños nidos de alga rellenos de huevas de pez volador, un sabor único y textura crujiente.</p>
+      <p class="precio">3.99€</p>
+    </div>     
+  </section>  
+  
+  <section id="gyozas">
+    <h2>Gyozas</h2>
+    <p>Descubre nuestras gyozas, una delicia japonesa que te encantará.</p><br>
+    <div>
+      <img src="images/gyoza1.jpg" alt="Gyozas de cerdo">
+      <h3>Gyozas de cerdo</h3>
+      <p>Dumplings rellenos de sabroso cerdo y vegetales, cocidos al vapor y luego dorados.</p>
+      <p class="precio">6.49€</p>
+    </div>
+    <div>
+      <img src="images/gyoza2.jpg" alt="Gyozas de pollo">
+      <h3>Gyozas de pollo</h3>
+      <p>Deliciosas gyozas rellenas de jugoso pollo y finas hierbas.</p>
+      <p class="precio">5.99€</p>
+    </div>
+    <div>
+      <img src="images/gyoza3.jpg" alt="Gyozas de verduras">
+      <h3>Gyozas de verduras</h3>
+      <p>Dumplings vegetarianos rellenos de una mezcla de verduras frescas y sazonadas.</p>
+      <p class="precio">5.49€</p>
+    </div>
+    <div>
+      <img src="images/gyoza4.jpg" alt="Gyozas de camarón">
+      <h3>Gyozas de camarón</h3>
+      <p>Gyozas rellenas de camarones frescos, marinados en especias japonesas.</p>
+      <p class="precio">7.49€</p>
+    </div>
+    <div>
+      <img src="images/gyoza5.jpg" alt="Gyozas de setas shiitake">
+      <h3>Gyozas de setas shiitake</h3>
+      <p>Deliciosas gyozas vegetarianas rellenas de setas shiitake y un toque de ajo.</p>
+      <p class="precio">6.99€</p>
+    </div>  
+  </section>  
+  
+  <section id="combos">
+    <h2>Combos</h2>
+    <p>Combina tus platos favoritos y ahorra con nuestros combos especiales.</p><br>
+    <div>
+      <img src="images/combo1.jpg" alt="Combo de sushi clásico">
+      <h3>Combo de sushi clásico</h3>
+      <p>Una selección de los rollitos de sushi más populares, perfecta para probar un poco de todo.</p>
+      <p class="precio">14.99€</p>
+    </div>
+    <div>
+      <img src="images/combo2.jpg" alt="Combo de tempura">
+      <h3>Combo de tempura</h3>
+      <p>Una combinación de tempura de verduras y mariscos, servida con salsa de inmersión.</p>
+      <p class="precio">12.99€</p>
+    </div>
+    <div>
+      <img src="images/combo3.jpg" alt="Combo de sushi y sashimi">
+      <h3>Combo de sushi y sashimi</h3>
+      <p>El combo definitivo para los amantes del sushi, que incluye una variedad de sushi y sashimi.</p>
+      <p class="precio">17.99€</p>
+    </div>
+  </section>  
+  
+  <section id="bebidas">
+    <h2>Bebidas</h2>
+    <p>Refrescos, cervezas japonesas y sake para acompañar tu comida.</p><br>
+    <div>
+      <img src="images/sake.jpg" alt="Sake caliente">
+      <h3>Sake caliente</h3>
+      <p>Una bebida tradicional japonesa, servida caliente para resaltar sus sabores.</p>
+      <p class="precio">3.99€</p>
+    </div>
+    <div>
+      <img src="images/cerveza.jpg" alt="Cerveza Asahi">
+      <h3>Cerveza Asahi</h3>
+      <p>Una cerveza japonesa suave y refrescante, perfecta para acompañar cualquier plato.</p>
+      <p class="precio">2.99€</p>
+    </div>
+    <div>
+      <img src="images/te-verde.jpg" alt="Té verde">
+      <h3>Refresco de té verde</h3>
+      <p>Una bebida refrescante y saludable, elaborada con auténtico té verde japonés.</p>
+      <p class="precio">2.49€</p>
+    </div>
+    <div>
+      <img src="images/agua-cebada.jpg" alt="Agua de cebada">
+      <h3>Agua de cebada</h3>
+      <p>Una bebida refrescante y única, con un ligero sabor a cebada tostada.</p>
+      <p class="precio">1.99€</p>
+    </div>
+    <div>
+      <img src="images/refrescos.jpg" alt="Refrescos">
+      <h3>Refrescos</h3>
+      <p>Refresco clásico y refrescante, ideal para calmar la sed en cualquier momento.</p>
+      <p class="precio">1.49€</p>
+    </div>
+  </section>  
+  
+  <section id="postre">
+    <h2>Postre</h2>
+    <p>Finaliza tu comida con un dulce postre japonés, ¡una experiencia única!</p><br>
+    <div>
+      <img src="images/postre1.jpg" alt="Mochis variados">
+      <h3>Mochis variados</h3>
+      <p>Dulces bolas de arroz rellenas de crema de fresa, envueltas en una fina capa de masa de arroz.</p>
+      <p class="precio">4.99€</p>
+    </div>
+    <div>
+      <img src="images/postre2.jpg" alt="Dorayaki">
+      <h3>Dorayaki</h3>
+      <p>Pasteles japoneses rellenos de anko (pasta de judía roja dulce).</p>
+      <p class="precio">3.49€</p>
+    </div>
+    <div>
+      <img src="images/postre3.jpg" alt="Castella">
+      <h3>Castella</h3>
+      <p>Pastel japonés esponjoso y dulce, similar al bizcocho pero con una textura única.</p>
+      <p class="precio">5.49€</p>
+    </div>
+    <div>
+      <img src="images/postre4.jpg" alt="Taiyaki">
+      <h3>Taiyaki</h3>
+      <p>Deliciosos pasteles en forma de pez, rellenos de crema de vainilla, chocolate o pasta de judía dulce.</p>
+      <p class="precio">4.49€</p>
+    </div>
+  </section>
+
+  <!-- Vídeo -->
+  <div class="video-carousel-container fade-up" id="promociones">
+      <div class="video">
+          <h2>Promociones</h2>
+          <p>¡Descubre nuestras promociones exclusivas y disfruta de una experiencia culinaria única! Ven y aprovecha nuestras ofertas especiales.</p><br>
+          <video controls autoplay muted>
+              <source src="images/video.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div class="carousel">
+          <div class="slide">
+            <div class="slide-text">
+                <!-- Canvas Animado -->
+                <h3 style="display: flex; align-items: center;">
+                  Oferta de Atención a Domicilio
+                  <canvas class="offerCanvas" width="25" height="25" style="margin-left: auto;"></canvas>
+                </h3>
+                <p>¡Atención a domicilio gratuita sin mínimo en el pedido los 7 días de la semana!</p>
+                <p>Horario: 13:00 - 16:00 y 20:30 - 23:59</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+                <!-- SVG Animado -->
+                <h3 style="display: flex; align-items: center;">
+                  Oferta de Fin de Semana y Festivos
+                  <svg class="offerSVG" width="25" height="25" style="margin-left: auto;"></svg>
+                </h3>
+                <p>¡Un plato gratis a elegir entre 3 opciones en pedidos superiores de 40 euros!</p>
+            </div>
+          </div>
+      </div>
+  </div><br>
+
+  <footer>
+    <p>Calle San Sebastián, 12, Huelva, 21001</p>
+    <p>+34 695 362 655</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
