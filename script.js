@@ -61,58 +61,62 @@
     // Canvas Logo
     var canvas = document.getElementById("logoCanvas");
     var ctx = canvas.getContext("2d");
-    var amarillo = "#ffae42";
-    var blanco = "#FFFFFF";
     var circleX = canvas.width / 2;
     var circleY = canvas.height / 2;
     var circleRadius = 50;
-    var textSize = 26;
-    var textSizeDelta = 0.02;
     var angle = 0;
     var rotationSpeed = 0.07;
 
-    function drawCircle() {
-      var gradient = ctx.createLinearGradient(circleX - circleRadius, circleY, circleX + circleRadius, circleY);
-      gradient.addColorStop(0, "#ffae42");
-      gradient.addColorStop(1, "#ff8148");
+    var img = new Image();
+    img.src = 'images/logo.png';
 
-      ctx.strokeStyle = gradient;
-      ctx.lineWidth = 5;
-      ctx.beginPath();
-      ctx.arc(circleX, circleY, circleRadius, 0, Math.PI * 2);
-      ctx.stroke();
+    var outerCircleRadius = circleRadius; 
+    var outerCircleRadiusDelta = 1; 
+    var minOuterCircleRadius = circleRadius * 0.8; 
+    var maxOuterCircleRadius = circleRadius * 1.2; 
+
+    function drawCircle() {
+        var gradient = ctx.createLinearGradient(circleX - outerCircleRadius, circleY, circleX + outerCircleRadius, circleY);
+        gradient.addColorStop(0, "#ffae42");
+        gradient.addColorStop(1, "#ff8148");
+
+        ctx.strokeStyle = gradient;
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.arc(circleX, circleY, outerCircleRadius, 0, Math.PI * 2);
+        ctx.stroke();
     }
 
-    function drawText() {
-      ctx.fillStyle = blanco;
-      ctx.font = "bold " + textSize + "px Arial";
-      ctx.textAlign = "center";
-      ctx.fillText("ONUBA SUSHI", circleX, circleY + 8);
+    function drawImage() {
+        ctx.drawImage(img, circleX - circleRadius, circleY - circleRadius, circleRadius * 2, circleRadius * 2);
     }
 
     function animate() {
-      textSize += textSizeDelta;
-      if (textSize <= 26 || textSize >= 27) {
-        textSizeDelta = -textSizeDelta;
-      }
+        angle += rotationSpeed;
 
-      angle += rotationSpeed;
+        outerCircleRadius += outerCircleRadiusDelta;
 
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+        if (outerCircleRadius <= minOuterCircleRadius || outerCircleRadius >= maxOuterCircleRadius) {
+            outerCircleRadiusDelta = -outerCircleRadiusDelta; 
+        }
 
-      ctx.save();
-      ctx.translate(circleX, circleY);
-      ctx.rotate(angle);
-      ctx.translate(-circleX, -circleY);
-      drawCircle();
-      ctx.restore();
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      drawText();
+        ctx.save();
+        ctx.translate(circleX, circleY);
+        ctx.rotate(angle);
+        ctx.translate(-circleX, -circleY);
+        drawCircle();
+        ctx.restore();
 
-      requestAnimationFrame(animate);
+        drawImage();
+
+        requestAnimationFrame(animate);
     }
 
-    animate();
+    img.onload = function() {
+        animate();
+    };
 
     // Animación Carrusel
     $(document).ready(function() {
