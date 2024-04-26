@@ -187,10 +187,6 @@ section div h3 {
     transition: top 0.3s ease-in-out;
 }
 
-section div:hover h3 {
-    top: 25%;
-}
-
 section div p {
     position: absolute; 
     top: 150%;
@@ -201,6 +197,10 @@ section div p {
     text-align: center; 
     box-sizing: border-box; 
     transition: top 0.3s ease-in-out; 
+}
+
+section div:hover h3 {
+    top: 25%;
 }
 
 section div:hover p {
